@@ -6,7 +6,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 		
 		<bean id ="stu1" class="com.learning.springdemo1.Student" >
-		<property name="age" value="10"></property>
+		<constructor-arg value="12"></constructor-arg>
 		<property name="laptop" ref="lapi"></property>
 		</bean>
 		

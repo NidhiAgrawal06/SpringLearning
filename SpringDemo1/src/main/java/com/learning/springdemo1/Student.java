@@ -4,15 +4,20 @@ public class Student {
 	private int age;
 	private Laptop laptop;
 	
+	
+//	public Student()
+//	{
+//		System.out.println("Student Object is created");
+//	}
+	public Student(int age) {
+		this.age = age;
+	}
+	
 	public Laptop getLaptop() {
 		return laptop;
 	}
 	public void setLaptop(Laptop laptop) {
 		this.laptop = laptop;
-	}
-	public Student()
-	{
-		System.out.println("Student Object is created");
 	}
 	public int getAge() {
 		return age;
@@ -30,5 +35,6 @@ public class Student {
 		System.out.println("I am learning");
 		laptop.addLaptop();
 	}
+	
 
 }
