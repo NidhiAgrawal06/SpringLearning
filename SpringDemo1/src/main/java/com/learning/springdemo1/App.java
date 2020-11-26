@@ -20,18 +20,8 @@ public class App {
 		//bean created in springconfig.xml file bean id is stu1
 		Student obj1 =(Student)factory.getBean("stu1");
 		obj1.study();
-//		obj1.age=20;
-//		System.out.println("Age of Obj1 is :"+obj1.age);
 		System.out.println("Age of Obj1 is "+ obj1.getAge());
-//		
-//		Student obj2 =(Student)factory.getBean("stu1");
-//		obj2.study();
-//		System.out.println("Age of Obj2 is :"+obj2.age);
-		//If Scope is not specified
-		//obj2 will also print age as 20 as Object is created only 1 i.e stu1 referneces are two obj1 & obj 2
-		//Spring Container is creating only one object (stu1) --This is known as Singleton pattern 
-	
-		//If scope is specified as prototype is will different age for obj1 and obj 2
+
 	}
 
 }

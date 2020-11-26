@@ -7,5 +7,9 @@
 		
 		<bean id ="stu1" class="com.learning.springdemo1.Student" >
 		<property name="age" value="10"></property>
+		<property name="laptop" ref="lapi"></property>
+		</bean>
+		
+		<bean id="lapi" class="com.learning.springdemo1.Laptop">
 		</bean>
 </beans>
