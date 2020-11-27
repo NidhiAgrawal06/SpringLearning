@@ -20,15 +20,27 @@
 		</bean> -->
 		
 		
-		<!-- 		AUTO WIRE BY Type -->		
+		<!-- 		AUTO WIRE BY Type and setting ref-->		
+		<!-- <bean id ="stu1" class="com.learning.springdemo1.Student" autowire="byType">
+		<property name="age" value="10"></property>
+		<property name="device" ref="tab"></property>
+		</bean>
+		
+		<bean id="lapi" class="com.learning.springdemo1.Laptop">
+		</bean>
+		
+		<bean id="tab" class="com.learning.springdemo1.Tab">
+		</bean> -->
+		
+		
+		<!-- 		AUTO WIRE BY Type and setting Primary-->		
 		<bean id ="stu1" class="com.learning.springdemo1.Student" autowire="byType">
 		<property name="age" value="10"></property>
 		</bean>
 		
-		<!-- <bean id="lapi" class="com.learning.springdemo1.Laptop">
-		</bean> -->
+		<bean id="lapi" class="com.learning.springdemo1.Laptop" primary="true">
+		</bean>
 		
 		<bean id="tab" class="com.learning.springdemo1.Tab">
 		</bean>
-		
 </beans>
