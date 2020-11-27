@@ -2,23 +2,22 @@ package com.learning.springdemo1;
 
 public class Student {
 	private int age;
-	private Laptop laptop;
+	private Device device;
 	
 	
-//	public Student()
-//	{
-//		System.out.println("Student Object is created");
-//	}
-	public Student(int age) {
-		this.age = age;
+	public Student()
+	{
+		System.out.println("Student Object is created");
 	}
 	
-	public Laptop getLaptop() {
-		return laptop;
+	public Device getDevice() {
+		return device;
 	}
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+
+	public void setDevice(Device device) {
+		this.device = device;
 	}
+
 	public int getAge() {
 		return age;
 	}
@@ -33,7 +32,7 @@ public class Student {
 	public void study()
 	{
 		System.out.println("I am learning");
-		laptop.addLaptop();
+		device.addDevice();
 	}
 	
 

@@ -5,11 +5,30 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 		
-		<bean id ="stu1" class="com.learning.springdemo1.Student" >
-		<constructor-arg value="12"></constructor-arg>
-		<property name="laptop" ref="lapi"></property>
+		
+		
+<!-- 		AUTO WIRE BY NAME -->
+		<!-- <bean id ="stu1" class="com.learning.springdemo1.Student" autowire="byName" >
+		<property name="age" value="10"></property>
+		<property name="device" ref="tab"></property>
 		</bean>
 		
 		<bean id="lapi" class="com.learning.springdemo1.Laptop">
 		</bean>
+		
+		<bean id="tab" class="com.learning.springdemo1.Tab">
+		</bean> -->
+		
+		
+		<!-- 		AUTO WIRE BY Type -->		
+		<bean id ="stu1" class="com.learning.springdemo1.Student" autowire="byType">
+		<property name="age" value="10"></property>
+		</bean>
+		
+		<!-- <bean id="lapi" class="com.learning.springdemo1.Laptop">
+		</bean> -->
+		
+		<bean id="tab" class="com.learning.springdemo1.Tab">
+		</bean>
+		
 </beans>

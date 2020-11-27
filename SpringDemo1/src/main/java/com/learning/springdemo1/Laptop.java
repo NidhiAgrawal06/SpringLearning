@@ -1,8 +1,8 @@
 package com.learning.springdemo1;
 
-public class Laptop {
+public class Laptop implements Device {
 	
-	public void addLaptop()
+	public void addDevice()
 	{
 		System.out.println("Laptop added");
 	}
