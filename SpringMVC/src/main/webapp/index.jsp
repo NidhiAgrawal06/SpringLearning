@@ -8,5 +8,11 @@
 </head>
 <body>
  Welcome to Spring MVC
+ <form action = "add">
+ Enter 1st no:<input type="text" name="num1"><br>
+ Enter 2nd no:<input type="text" name="num2"><br>
+ <input type="submit">
+ 
+ </form>
 </body>
 </html>
